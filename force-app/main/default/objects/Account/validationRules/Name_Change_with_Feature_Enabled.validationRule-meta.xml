@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Name_Change_with_Feature_Enabled</fullName>
+    <active>true</active>
+    <description>Disable the ability to change the name when the feature is enabled</description>
+    <errorConditionFormula>$Permission.Feature_Enabled &amp;&amp;
+ISCHANGED(Name)</errorConditionFormula>
+    <errorMessage>You cannot change the name of the account</errorMessage>
+</ValidationRule>

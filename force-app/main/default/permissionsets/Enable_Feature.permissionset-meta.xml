@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <classAccesses>
+        <apexClass>WebServiceFeature</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Feature_Enabled</name>
+    </customPermissions>
+    <description>This permission set will be the full wrapper for the feature flag, where the custom permission handles code and certain UI enablement, the permission set can then also include fields that are available as the mechanism</description>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Part_of_New_Feature__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Enable Feature</label>
+</PermissionSet>

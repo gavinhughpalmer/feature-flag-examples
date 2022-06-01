@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This is a feature flag demonstration, when enabled some mock code and features will become available</description>
+    <isLicensed>false</isLicensed>
+    <label>Feature Enabled</label>
+</CustomPermission>

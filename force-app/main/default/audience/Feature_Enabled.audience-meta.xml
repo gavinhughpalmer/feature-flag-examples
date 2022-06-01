@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Audience xmlns="http://soap.sforce.com/2006/04/metadata">
+    <audienceName>Feature Enabled</audienceName>
+    <container>MyCommunity</container>
+    <criteria>
+        <criterion>
+            <criteriaNumber>1</criteriaNumber>
+            <criterionValue>
+                <isEnabled>true</isEnabled>
+                <permissionName>Feature_Enabled</permissionName>
+                <permissionType>Custom</permissionType>
+            </criterionValue>
+            <operator>Equal</operator>
+            <type>Permission</type>
+        </criterion>
+    </criteria>
+    <formulaFilterType>AllCriteriaMatch</formulaFilterType>
+    <isDefaultAudience>false</isDefaultAudience>
+    <targets>
+        <target>
+            <groupName>ee9e0066-4934-4d1a-93fe-a10546d28878$#$0ecb725f-2ea2-4e52-96fb-17ca01fd2ecc</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Home_Headline_Component</targetValue>
+        </target>
+    </targets>
+</Audience>
